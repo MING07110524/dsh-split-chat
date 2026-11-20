@@ -1,0 +1,61 @@
+{
+  "name": "dsh-split-chat",
+  "version": "1.0.0",
+  "description": "Split board for DeepSeek Harness: show several live conversations side by side in the main area, each with its own message stream and composer.",
+  "type": "module",
+  "keywords": [
+    "dsh-plugin",
+    "deepseek-harness",
+    "dsh",
+    "split-view",
+    "multi-session",
+    "workspace",
+    "chat",
+    "ui"
+  ],
+  "author": "MING (https://github.com/MING07110524)",
+  "license": "MIT",
+  "homepage": "https://github.com/MING07110524/dsh-split-chat",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MING07110524/dsh-split-chat.git"
+  },
+  "bugs": {
+    "url": "https://github.com/MING07110524/dsh-split-chat/issues"
+  },
+  "engines": {
+    "dsh": ">=0.2.2-rc.1 <0.3.0"
+  },
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "docs",
+    "README.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-conversation",
+        "@deepseek-ai/dsh-client-ui-layout",
+        "@deepseek-ai/dsh-client-ui-sidebar",
+        "@deepseek-ai/dsh-client-ui-workspace",
+        "@deepseek-ai/dsh-client-locale"
+      ]
+    }
+  }
+}

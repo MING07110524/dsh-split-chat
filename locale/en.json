@@ -1,0 +1,7 @@
+{
+  "meta": {
+    "title": "Split conversations",
+    "description": "Show up to six live conversations side by side in the main area, each with its full message stream and composer. Open the board from the sidebar panel list button \"Split conversations\", or drag a conversation row from the sidebar onto it; dragging a row onto the sidebar button opens the board with the conversation you were in plus the dragged one. Every tile stays a real session, so typing in a tile sends to that session. The board keeps at most six tiles and restores its members from local storage after a restart. While the board occupies the main area, clicking a file link or \"Preview in sidebar\" inside a tile first returns to the conversation panel and then opens the preview in the right sidebar. Turning the plugin off restores the ordinary single-conversation main area.",
+    "detail": "docs/DETAIL.md"
+  }
+}

@@ -1,0 +1,3 @@
+- insert:
+    - id: split-board
+      name: 'dsh-split-chat'
